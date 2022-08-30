@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option java_package = "com.javastubs.grpc";
+service files {
+	rpc fetchcontents (FetchRequest) returns (APIResponse);
+}
+
+message FetchRequest {
+	string filepath = 1;
+	string filename = 2;
+}
+
+message APIResponse {
+	string filecontent = 1;
+	int32 responsecode = 2;
+}
