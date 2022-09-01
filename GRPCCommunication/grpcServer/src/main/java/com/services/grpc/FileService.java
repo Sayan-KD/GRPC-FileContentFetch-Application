@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import com.javastubs.grpc.Files.APIResponse;
+import com.javastubs.grpc.Files.FetchResponse;
 import com.javastubs.grpc.Files.FetchRequest;
 import com.javastubs.grpc.filesGrpc.filesImplBase;
 
@@ -12,10 +12,10 @@ import io.grpc.stub.StreamObserver;
 
 public class FileService extends filesImplBase {
 	@Override
-	public void fetchcontents(FetchRequest request, StreamObserver<APIResponse> responseObserver) {
+	public void fetchcontents(FetchRequest request, StreamObserver<FetchResponse> responseObserver) {
 		String filepath = request.getFilepath();
 		String filename = request.getFilename();
-		APIResponse.Builder response = APIResponse.newBuilder();
+		FetchResponse.Builder response = FetchResponse.newBuilder();
 		Scanner scanner=null;
 		StringBuilder stringbuilder = new StringBuilder();;
 		if(filename.equals("")) {

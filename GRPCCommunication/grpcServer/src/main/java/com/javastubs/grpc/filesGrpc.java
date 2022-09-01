@@ -28,21 +28,21 @@ public final class filesGrpc {
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<com.javastubs.grpc.Files.FetchRequest,
-      com.javastubs.grpc.Files.APIResponse> getFetchcontentsMethod;
+      com.javastubs.grpc.Files.FetchResponse> getFetchcontentsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "fetchcontents",
       requestType = com.javastubs.grpc.Files.FetchRequest.class,
-      responseType = com.javastubs.grpc.Files.APIResponse.class,
+      responseType = com.javastubs.grpc.Files.FetchResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<com.javastubs.grpc.Files.FetchRequest,
-      com.javastubs.grpc.Files.APIResponse> getFetchcontentsMethod() {
-    io.grpc.MethodDescriptor<com.javastubs.grpc.Files.FetchRequest, com.javastubs.grpc.Files.APIResponse> getFetchcontentsMethod;
+      com.javastubs.grpc.Files.FetchResponse> getFetchcontentsMethod() {
+    io.grpc.MethodDescriptor<com.javastubs.grpc.Files.FetchRequest, com.javastubs.grpc.Files.FetchResponse> getFetchcontentsMethod;
     if ((getFetchcontentsMethod = filesGrpc.getFetchcontentsMethod) == null) {
       synchronized (filesGrpc.class) {
         if ((getFetchcontentsMethod = filesGrpc.getFetchcontentsMethod) == null) {
           filesGrpc.getFetchcontentsMethod = getFetchcontentsMethod = 
-              io.grpc.MethodDescriptor.<com.javastubs.grpc.Files.FetchRequest, com.javastubs.grpc.Files.APIResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.javastubs.grpc.Files.FetchRequest, com.javastubs.grpc.Files.FetchResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "files", "fetchcontents"))
@@ -50,7 +50,7 @@ public final class filesGrpc {
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.javastubs.grpc.Files.FetchRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.javastubs.grpc.Files.APIResponse.getDefaultInstance()))
+                  com.javastubs.grpc.Files.FetchResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new filesMethodDescriptorSupplier("fetchcontents"))
                   .build();
           }
@@ -89,7 +89,7 @@ public final class filesGrpc {
     /**
      */
     public void fetchcontents(com.javastubs.grpc.Files.FetchRequest request,
-        io.grpc.stub.StreamObserver<com.javastubs.grpc.Files.APIResponse> responseObserver) {
+        io.grpc.stub.StreamObserver<com.javastubs.grpc.Files.FetchResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getFetchcontentsMethod(), responseObserver);
     }
 
@@ -100,7 +100,7 @@ public final class filesGrpc {
             asyncUnaryCall(
               new MethodHandlers<
                 com.javastubs.grpc.Files.FetchRequest,
-                com.javastubs.grpc.Files.APIResponse>(
+                com.javastubs.grpc.Files.FetchResponse>(
                   this, METHODID_FETCHCONTENTS)))
           .build();
     }
@@ -127,7 +127,7 @@ public final class filesGrpc {
     /**
      */
     public void fetchcontents(com.javastubs.grpc.Files.FetchRequest request,
-        io.grpc.stub.StreamObserver<com.javastubs.grpc.Files.APIResponse> responseObserver) {
+        io.grpc.stub.StreamObserver<com.javastubs.grpc.Files.FetchResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getFetchcontentsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -153,7 +153,7 @@ public final class filesGrpc {
 
     /**
      */
-    public com.javastubs.grpc.Files.APIResponse fetchcontents(com.javastubs.grpc.Files.FetchRequest request) {
+    public com.javastubs.grpc.Files.FetchResponse fetchcontents(com.javastubs.grpc.Files.FetchRequest request) {
       return blockingUnaryCall(
           getChannel(), getFetchcontentsMethod(), getCallOptions(), request);
     }
@@ -179,7 +179,7 @@ public final class filesGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.javastubs.grpc.Files.APIResponse> fetchcontents(
+    public com.google.common.util.concurrent.ListenableFuture<com.javastubs.grpc.Files.FetchResponse> fetchcontents(
         com.javastubs.grpc.Files.FetchRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getFetchcontentsMethod(), getCallOptions()), request);
@@ -207,7 +207,7 @@ public final class filesGrpc {
       switch (methodId) {
         case METHODID_FETCHCONTENTS:
           serviceImpl.fetchcontents((com.javastubs.grpc.Files.FetchRequest) request,
-              (io.grpc.stub.StreamObserver<com.javastubs.grpc.Files.APIResponse>) responseObserver);
+              (io.grpc.stub.StreamObserver<com.javastubs.grpc.Files.FetchResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();

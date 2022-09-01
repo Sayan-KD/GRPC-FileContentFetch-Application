@@ -3,8 +3,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import com.javastubs.grpc.filesGrpc;
-import com.javastubs.grpc.Files.APIResponse;
 import com.javastubs.grpc.Files.FetchRequest;
+import com.javastubs.grpc.Files.FetchResponse;
 import com.javastubs.grpc.filesGrpc.filesBlockingStub;
 
 import io.grpc.ManagedChannel;
@@ -14,9 +14,9 @@ public class GRPCClient {
 
 	public static void main(String[] args) {
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));		
-		ManagedChannel channel = ManagedChannelBuilder.forAddress("172.18.0.2", 8888).usePlaintext().build();
+		ManagedChannel channel = ManagedChannelBuilder.forAddress("172.18.0.2", 8888).usePlaintext().build();  // '172.18.0.2' is the IP Address of the Server Container.
 		filesBlockingStub fileStubs= filesGrpc.newBlockingStub(channel);
-		String again="no";
+		String fetchagain="no";
 		try {
 			do {
 				System.out.print("Enter Filepath: ");
@@ -24,12 +24,12 @@ public class GRPCClient {
 				System.out.print("Enter Filename: ");
 				String filename= bufferedReader.readLine();
 				
-				FetchRequest fetchRequest=FetchRequest.newBuilder().setFilepath(filepath).setFilename(filename).build();
-				APIResponse fetchresponse = fileStubs.fetchcontents(fetchRequest);
-				System.out.println("SERVER : \n"+fetchresponse.getFilecontent());
+				FetchRequest request=FetchRequest.newBuilder().setFilepath(filepath).setFilename(filename).build();	
+				FetchResponse response = fileStubs.fetchcontents(request);
+				System.out.println("SERVER : \n"+response.getFilecontent());
 				System.out.print("Fetch Other Files? ['yes'] OR ['no']: ");
-				again=bufferedReader.readLine();
-			}while(again.equalsIgnoreCase("yes"));
+				fetchagain=bufferedReader.readLine();
+			}while(fetchagain.equalsIgnoreCase("yes"));
 		}catch (Exception e) {
 			System.out.println(e);
 		}
@@ -39,8 +39,6 @@ public class GRPCClient {
 			} catch (IOException e) {				
 				e.printStackTrace();
 			}
-			
 		}
 	}
-
 }

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option java_package = "com.javastubs.grpc";
 service files {
-	rpc fetchcontents (FetchRequest) returns (APIResponse);
+	rpc fetchcontents (FetchRequest) returns (FetchResponse);
 }
 
 message FetchRequest {
@@ -10,7 +10,7 @@ message FetchRequest {
 	string filename = 2;
 }
 
-message APIResponse {
+message FetchResponse {
 	string filecontent = 1;
 	int32 responsecode = 2;
 }

@@ -701,8 +701,8 @@ public final class Files {
 
   }
 
-  public interface APIResponseOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:APIResponse)
+  public interface FetchResponseOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:FetchResponse)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -721,18 +721,18 @@ public final class Files {
     int getResponsecode();
   }
   /**
-   * Protobuf type {@code APIResponse}
+   * Protobuf type {@code FetchResponse}
    */
-  public  static final class APIResponse extends
+  public  static final class FetchResponse extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:APIResponse)
-      APIResponseOrBuilder {
+      // @@protoc_insertion_point(message_implements:FetchResponse)
+      FetchResponseOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use APIResponse.newBuilder() to construct.
-    private APIResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use FetchResponse.newBuilder() to construct.
+    private FetchResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private APIResponse() {
+    private FetchResponse() {
       filecontent_ = "";
       responsecode_ = 0;
     }
@@ -742,7 +742,7 @@ public final class Files {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private APIResponse(
+    private FetchResponse(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -793,15 +793,15 @@ public final class Files {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.javastubs.grpc.Files.internal_static_APIResponse_descriptor;
+      return com.javastubs.grpc.Files.internal_static_FetchResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.javastubs.grpc.Files.internal_static_APIResponse_fieldAccessorTable
+      return com.javastubs.grpc.Files.internal_static_FetchResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.javastubs.grpc.Files.APIResponse.class, com.javastubs.grpc.Files.APIResponse.Builder.class);
+              com.javastubs.grpc.Files.FetchResponse.class, com.javastubs.grpc.Files.FetchResponse.Builder.class);
     }
 
     public static final int FILECONTENT_FIELD_NUMBER = 1;
@@ -893,10 +893,10 @@ public final class Files {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.javastubs.grpc.Files.APIResponse)) {
+      if (!(obj instanceof com.javastubs.grpc.Files.FetchResponse)) {
         return super.equals(obj);
       }
-      com.javastubs.grpc.Files.APIResponse other = (com.javastubs.grpc.Files.APIResponse) obj;
+      com.javastubs.grpc.Files.FetchResponse other = (com.javastubs.grpc.Files.FetchResponse) obj;
 
       boolean result = true;
       result = result && getFilecontent()
@@ -923,69 +923,69 @@ public final class Files {
       return hash;
     }
 
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(byte[] data)
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(java.io.InputStream input)
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseDelimitedFrom(java.io.InputStream input)
+    public static com.javastubs.grpc.Files.FetchResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseDelimitedFrom(
+    public static com.javastubs.grpc.Files.FetchResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.javastubs.grpc.Files.APIResponse parseFrom(
+    public static com.javastubs.grpc.Files.FetchResponse parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -998,7 +998,7 @@ public final class Files {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.javastubs.grpc.Files.APIResponse prototype) {
+    public static Builder newBuilder(com.javastubs.grpc.Files.FetchResponse prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1014,26 +1014,26 @@ public final class Files {
       return builder;
     }
     /**
-     * Protobuf type {@code APIResponse}
+     * Protobuf type {@code FetchResponse}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:APIResponse)
-        com.javastubs.grpc.Files.APIResponseOrBuilder {
+        // @@protoc_insertion_point(builder_implements:FetchResponse)
+        com.javastubs.grpc.Files.FetchResponseOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.javastubs.grpc.Files.internal_static_APIResponse_descriptor;
+        return com.javastubs.grpc.Files.internal_static_FetchResponse_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.javastubs.grpc.Files.internal_static_APIResponse_fieldAccessorTable
+        return com.javastubs.grpc.Files.internal_static_FetchResponse_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.javastubs.grpc.Files.APIResponse.class, com.javastubs.grpc.Files.APIResponse.Builder.class);
+                com.javastubs.grpc.Files.FetchResponse.class, com.javastubs.grpc.Files.FetchResponse.Builder.class);
       }
 
-      // Construct using com.javastubs.grpc.Files.APIResponse.newBuilder()
+      // Construct using com.javastubs.grpc.Files.FetchResponse.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1061,17 +1061,17 @@ public final class Files {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.javastubs.grpc.Files.internal_static_APIResponse_descriptor;
+        return com.javastubs.grpc.Files.internal_static_FetchResponse_descriptor;
       }
 
       @java.lang.Override
-      public com.javastubs.grpc.Files.APIResponse getDefaultInstanceForType() {
-        return com.javastubs.grpc.Files.APIResponse.getDefaultInstance();
+      public com.javastubs.grpc.Files.FetchResponse getDefaultInstanceForType() {
+        return com.javastubs.grpc.Files.FetchResponse.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.javastubs.grpc.Files.APIResponse build() {
-        com.javastubs.grpc.Files.APIResponse result = buildPartial();
+      public com.javastubs.grpc.Files.FetchResponse build() {
+        com.javastubs.grpc.Files.FetchResponse result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1079,8 +1079,8 @@ public final class Files {
       }
 
       @java.lang.Override
-      public com.javastubs.grpc.Files.APIResponse buildPartial() {
-        com.javastubs.grpc.Files.APIResponse result = new com.javastubs.grpc.Files.APIResponse(this);
+      public com.javastubs.grpc.Files.FetchResponse buildPartial() {
+        com.javastubs.grpc.Files.FetchResponse result = new com.javastubs.grpc.Files.FetchResponse(this);
         result.filecontent_ = filecontent_;
         result.responsecode_ = responsecode_;
         onBuilt();
@@ -1121,16 +1121,16 @@ public final class Files {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.javastubs.grpc.Files.APIResponse) {
-          return mergeFrom((com.javastubs.grpc.Files.APIResponse)other);
+        if (other instanceof com.javastubs.grpc.Files.FetchResponse) {
+          return mergeFrom((com.javastubs.grpc.Files.FetchResponse)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.javastubs.grpc.Files.APIResponse other) {
-        if (other == com.javastubs.grpc.Files.APIResponse.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.javastubs.grpc.Files.FetchResponse other) {
+        if (other == com.javastubs.grpc.Files.FetchResponse.getDefaultInstance()) return this;
         if (!other.getFilecontent().isEmpty()) {
           filecontent_ = other.filecontent_;
           onChanged();
@@ -1153,11 +1153,11 @@ public final class Files {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.javastubs.grpc.Files.APIResponse parsedMessage = null;
+        com.javastubs.grpc.Files.FetchResponse parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.javastubs.grpc.Files.APIResponse) e.getUnfinishedMessage();
+          parsedMessage = (com.javastubs.grpc.Files.FetchResponse) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1274,41 +1274,41 @@ public final class Files {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:APIResponse)
+      // @@protoc_insertion_point(builder_scope:FetchResponse)
     }
 
-    // @@protoc_insertion_point(class_scope:APIResponse)
-    private static final com.javastubs.grpc.Files.APIResponse DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:FetchResponse)
+    private static final com.javastubs.grpc.Files.FetchResponse DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.javastubs.grpc.Files.APIResponse();
+      DEFAULT_INSTANCE = new com.javastubs.grpc.Files.FetchResponse();
     }
 
-    public static com.javastubs.grpc.Files.APIResponse getDefaultInstance() {
+    public static com.javastubs.grpc.Files.FetchResponse getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<APIResponse>
-        PARSER = new com.google.protobuf.AbstractParser<APIResponse>() {
+    private static final com.google.protobuf.Parser<FetchResponse>
+        PARSER = new com.google.protobuf.AbstractParser<FetchResponse>() {
       @java.lang.Override
-      public APIResponse parsePartialFrom(
+      public FetchResponse parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new APIResponse(input, extensionRegistry);
+        return new FetchResponse(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<APIResponse> parser() {
+    public static com.google.protobuf.Parser<FetchResponse> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<APIResponse> getParserForType() {
+    public com.google.protobuf.Parser<FetchResponse> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.javastubs.grpc.Files.APIResponse getDefaultInstanceForType() {
+    public com.javastubs.grpc.Files.FetchResponse getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1320,10 +1320,10 @@ public final class Files {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_FetchRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_APIResponse_descriptor;
+    internal_static_FetchResponse_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_APIResponse_fieldAccessorTable;
+      internal_static_FetchResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1334,11 +1334,11 @@ public final class Files {
   static {
     java.lang.String[] descriptorData = {
       "\n\013files.proto\"2\n\014FetchRequest\022\020\n\010filepat" +
-      "h\030\001 \001(\t\022\020\n\010filename\030\002 \001(\t\"8\n\013APIResponse" +
-      "\022\023\n\013filecontent\030\001 \001(\t\022\024\n\014responsecode\030\002 " +
-      "\001(\00525\n\005files\022,\n\rfetchcontents\022\r.FetchReq" +
-      "uest\032\014.APIResponseB\024\n\022com.javastubs.grpc" +
-      "b\006proto3"
+      "h\030\001 \001(\t\022\020\n\010filename\030\002 \001(\t\":\n\rFetchRespon" +
+      "se\022\023\n\013filecontent\030\001 \001(\t\022\024\n\014responsecode\030" +
+      "\002 \001(\00527\n\005files\022.\n\rfetchcontents\022\r.FetchR" +
+      "equest\032\016.FetchResponseB\024\n\022com.javastubs." +
+      "grpcb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -1358,11 +1358,11 @@ public final class Files {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_FetchRequest_descriptor,
         new java.lang.String[] { "Filepath", "Filename", });
-    internal_static_APIResponse_descriptor =
+    internal_static_FetchResponse_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_APIResponse_fieldAccessorTable = new
+    internal_static_FetchResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_APIResponse_descriptor,
+        internal_static_FetchResponse_descriptor,
         new java.lang.String[] { "Filecontent", "Responsecode", });
   }
 
