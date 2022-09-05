@@ -1,4 +1,4 @@
-package com.javastubs.grpc;
+package com.telaverge.server;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -27,30 +27,30 @@ public final class filesGrpc {
   public static final String SERVICE_NAME = "files";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.javastubs.grpc.Files.FetchRequest,
-      com.javastubs.grpc.Files.FetchResponse> getFetchcontentsMethod;
+  private static volatile io.grpc.MethodDescriptor<com.telaverge.server.Files.FetchRequest,
+      com.telaverge.server.Files.FetchResponse> getFetchcontentsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "fetchcontents",
-      requestType = com.javastubs.grpc.Files.FetchRequest.class,
-      responseType = com.javastubs.grpc.Files.FetchResponse.class,
+      requestType = com.telaverge.server.Files.FetchRequest.class,
+      responseType = com.telaverge.server.Files.FetchResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.javastubs.grpc.Files.FetchRequest,
-      com.javastubs.grpc.Files.FetchResponse> getFetchcontentsMethod() {
-    io.grpc.MethodDescriptor<com.javastubs.grpc.Files.FetchRequest, com.javastubs.grpc.Files.FetchResponse> getFetchcontentsMethod;
+  public static io.grpc.MethodDescriptor<com.telaverge.server.Files.FetchRequest,
+      com.telaverge.server.Files.FetchResponse> getFetchcontentsMethod() {
+    io.grpc.MethodDescriptor<com.telaverge.server.Files.FetchRequest, com.telaverge.server.Files.FetchResponse> getFetchcontentsMethod;
     if ((getFetchcontentsMethod = filesGrpc.getFetchcontentsMethod) == null) {
       synchronized (filesGrpc.class) {
         if ((getFetchcontentsMethod = filesGrpc.getFetchcontentsMethod) == null) {
           filesGrpc.getFetchcontentsMethod = getFetchcontentsMethod = 
-              io.grpc.MethodDescriptor.<com.javastubs.grpc.Files.FetchRequest, com.javastubs.grpc.Files.FetchResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.telaverge.server.Files.FetchRequest, com.telaverge.server.Files.FetchResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "files", "fetchcontents"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.javastubs.grpc.Files.FetchRequest.getDefaultInstance()))
+                  com.telaverge.server.Files.FetchRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.javastubs.grpc.Files.FetchResponse.getDefaultInstance()))
+                  com.telaverge.server.Files.FetchResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new filesMethodDescriptorSupplier("fetchcontents"))
                   .build();
           }
@@ -88,8 +88,8 @@ public final class filesGrpc {
 
     /**
      */
-    public void fetchcontents(com.javastubs.grpc.Files.FetchRequest request,
-        io.grpc.stub.StreamObserver<com.javastubs.grpc.Files.FetchResponse> responseObserver) {
+    public void fetchcontents(com.telaverge.server.Files.FetchRequest request,
+        io.grpc.stub.StreamObserver<com.telaverge.server.Files.FetchResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getFetchcontentsMethod(), responseObserver);
     }
 
@@ -99,8 +99,8 @@ public final class filesGrpc {
             getFetchcontentsMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.javastubs.grpc.Files.FetchRequest,
-                com.javastubs.grpc.Files.FetchResponse>(
+                com.telaverge.server.Files.FetchRequest,
+                com.telaverge.server.Files.FetchResponse>(
                   this, METHODID_FETCHCONTENTS)))
           .build();
     }
@@ -126,8 +126,8 @@ public final class filesGrpc {
 
     /**
      */
-    public void fetchcontents(com.javastubs.grpc.Files.FetchRequest request,
-        io.grpc.stub.StreamObserver<com.javastubs.grpc.Files.FetchResponse> responseObserver) {
+    public void fetchcontents(com.telaverge.server.Files.FetchRequest request,
+        io.grpc.stub.StreamObserver<com.telaverge.server.Files.FetchResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getFetchcontentsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -153,7 +153,7 @@ public final class filesGrpc {
 
     /**
      */
-    public com.javastubs.grpc.Files.FetchResponse fetchcontents(com.javastubs.grpc.Files.FetchRequest request) {
+    public com.telaverge.server.Files.FetchResponse fetchcontents(com.telaverge.server.Files.FetchRequest request) {
       return blockingUnaryCall(
           getChannel(), getFetchcontentsMethod(), getCallOptions(), request);
     }
@@ -179,8 +179,8 @@ public final class filesGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.javastubs.grpc.Files.FetchResponse> fetchcontents(
-        com.javastubs.grpc.Files.FetchRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.telaverge.server.Files.FetchResponse> fetchcontents(
+        com.telaverge.server.Files.FetchRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getFetchcontentsMethod(), getCallOptions()), request);
     }
@@ -206,8 +206,8 @@ public final class filesGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_FETCHCONTENTS:
-          serviceImpl.fetchcontents((com.javastubs.grpc.Files.FetchRequest) request,
-              (io.grpc.stub.StreamObserver<com.javastubs.grpc.Files.FetchResponse>) responseObserver);
+          serviceImpl.fetchcontents((com.telaverge.server.Files.FetchRequest) request,
+              (io.grpc.stub.StreamObserver<com.telaverge.server.Files.FetchResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -231,7 +231,7 @@ public final class filesGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.javastubs.grpc.Files.getDescriptor();
+      return com.telaverge.server.Files.getDescriptor();
     }
 
     @java.lang.Override

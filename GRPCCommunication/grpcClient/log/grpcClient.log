@@ -1,0 +1,894 @@
+DEBUG [InternalLoggerFactory.java:47] - Using Log4J as the default logging framework
+DEBUG [MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 32
+DEBUG [NioEventLoop.java:111] - -Dio.netty.noKeySetOptimization: false
+DEBUG [NioEventLoop.java:112] - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [PlatformDependent.java:943] - Platform: Windows
+DEBUG [PlatformDependent0.java:376] - -Dio.netty.noUnsafe: false
+DEBUG [PlatformDependent0.java:829] - Java version: 17
+DEBUG [PlatformDependent0.java:120] - sun.misc.Unsafe.theUnsafe: available
+DEBUG [PlatformDependent0.java:144] - sun.misc.Unsafe.copyMemory: available
+DEBUG [PlatformDependent0.java:182] - java.nio.Buffer.address: available
+DEBUG [PlatformDependent0.java:252] - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:300] - java.nio.Bits.unaligned: unavailable true
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:273)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:266)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:353] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @4f209819
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:315)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:306)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:366] - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG [PlatformDependent.java:980] - sun.misc.Unsafe: available
+DEBUG [PlatformDependent.java:1055] - maxDirectMemory: 4276092928 bytes (maybe)
+DEBUG [PlatformDependent.java:1074] - -Dio.netty.tmpdir: C:\Users\SAYAN\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [PlatformDependent.java:1153] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG [PlatformDependent.java:132] - -Dio.netty.noPreferDirect: false
+DEBUG [PlatformDependent.java:172] - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG [PlatformDependent.java:178] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG [CleanerJava9.java:63] - java.nio.ByteBuffer.cleaner(): available
+DEBUG [PlatformDependent.java:848] - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG [ResourceLeakDetector.java:121] - -Dio.grpc.netty.shaded.io.netty.leakDetection.level: simple
+DEBUG [ResourceLeakDetector.java:122] - -Dio.grpc.netty.shaded.io.netty.leakDetection.targetRecords: 4
+DEBUG [AbstractByteBuf.java:52] - -Dio.grpc.netty.shaded.io.netty.buffer.bytebuf.checkAccessible: true
+DEBUG [ResourceLeakDetectorFactory.java:202] - Loaded default ResourceLeakDetector: io.grpc.netty.shaded.io.netty.util.ResourceLeakDetector@5cd25e76
+DEBUG [InternalThreadLocalMap.java:54] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG [InternalThreadLocalMap.java:57] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG [DefaultChannelId.java:79] - -Dio.netty.processId: 26000 (auto-detected)
+DEBUG [NetUtil.java:139] - -Djava.net.preferIPv4Stack: false
+DEBUG [NetUtil.java:140] - -Djava.net.preferIPv6Addresses: false
+DEBUG [NetUtil.java:224] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [NetUtil.java:289] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG [DefaultChannelId.java:101] - -Dio.netty.machineId: b4:2e:99:ff:fe:f3:fe:9f (auto-detected)
+DEBUG [PooledByteBufAllocator.java:120] - -Dio.netty.allocator.numHeapArenas: 32
+DEBUG [PooledByteBufAllocator.java:121] - -Dio.netty.allocator.numDirectArenas: 32
+DEBUG [PooledByteBufAllocator.java:123] - -Dio.netty.allocator.pageSize: 8192
+DEBUG [PooledByteBufAllocator.java:128] - -Dio.netty.allocator.maxOrder: 11
+DEBUG [PooledByteBufAllocator.java:132] - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [PooledByteBufAllocator.java:133] - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG [PooledByteBufAllocator.java:134] - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [PooledByteBufAllocator.java:135] - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [PooledByteBufAllocator.java:136] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [PooledByteBufAllocator.java:137] - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [PooledByteBufAllocator.java:138] - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG [ByteBufUtil.java:83] - -Dio.netty.allocator.type: pooled
+DEBUG [ByteBufUtil.java:92] - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG [ByteBufUtil.java:95] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [Recycler.java:96] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG [Recycler.java:97] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG [Recycler.java:98] - -Dio.netty.recycler.linkCapacity: 16
+DEBUG [Recycler.java:99] - -Dio.netty.recycler.ratio: 8
+DEBUG [AbstractInternalLogger.java:216] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+DEBUG [AbstractInternalLogger.java:216] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+DEBUG [AbstractInternalLogger.java:216] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+DEBUG [AbstractInternalLogger.java:193] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] OUTBOUND SETTINGS: ack=true
+DEBUG [AbstractInternalLogger.java:216] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+DEBUG [AbstractInternalLogger.java:193] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] INBOUND SETTINGS: ack=true
+DEBUG [AbstractInternalLogger.java:216] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: localhost:8888, :path: /files/fetchcontents, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.15.1, grpc-accept-encoding: gzip, grpc-trace-bin: ] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+DEBUG [AbstractInternalLogger.java:216] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=17 bytes=000000000c0a0a2e2f70726f7065727479
+DEBUG [AbstractInternalLogger.java:216] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+DEBUG [AbstractInternalLogger.java:216] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] INBOUND DATA: streamId=3 padding=0 endStream=false length=941 bytes=00000003a80aa507417661696c61626c652046696c657320616e64204469726563746f726965733a205b6c6f67346a2e70726f706572746965735d200a2d2d2d...
+DEBUG [AbstractInternalLogger.java:216] - [id: 0x5508a14e, L:/127.0.0.1:3472 - R:localhost/127.0.0.1:8888] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+DEBUG [InternalLoggerFactory.java:47] - Using Log4J as the default logging framework
+DEBUG [MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 32
+DEBUG [NioEventLoop.java:111] - -Dio.netty.noKeySetOptimization: false
+DEBUG [NioEventLoop.java:112] - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [PlatformDependent.java:943] - Platform: Windows
+DEBUG [PlatformDependent0.java:376] - -Dio.netty.noUnsafe: false
+DEBUG [PlatformDependent0.java:829] - Java version: 17
+DEBUG [PlatformDependent0.java:120] - sun.misc.Unsafe.theUnsafe: available
+DEBUG [PlatformDependent0.java:144] - sun.misc.Unsafe.copyMemory: available
+DEBUG [PlatformDependent0.java:182] - java.nio.Buffer.address: available
+DEBUG [PlatformDependent0.java:252] - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:300] - java.nio.Bits.unaligned: unavailable true
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:273)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:266)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:353] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @1cbbffcd
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:315)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:306)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:366] - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG [PlatformDependent.java:980] - sun.misc.Unsafe: available
+DEBUG [PlatformDependent.java:1055] - maxDirectMemory: 4276092928 bytes (maybe)
+DEBUG [PlatformDependent.java:1074] - -Dio.netty.tmpdir: C:\Users\SAYAN\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [PlatformDependent.java:1153] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG [PlatformDependent.java:132] - -Dio.netty.noPreferDirect: false
+DEBUG [PlatformDependent.java:172] - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG [PlatformDependent.java:178] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG [CleanerJava9.java:63] - java.nio.ByteBuffer.cleaner(): available
+DEBUG [PlatformDependent.java:848] - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG [ResourceLeakDetector.java:121] - -Dio.grpc.netty.shaded.io.netty.leakDetection.level: simple
+DEBUG [ResourceLeakDetector.java:122] - -Dio.grpc.netty.shaded.io.netty.leakDetection.targetRecords: 4
+DEBUG [AbstractByteBuf.java:52] - -Dio.grpc.netty.shaded.io.netty.buffer.bytebuf.checkAccessible: true
+DEBUG [ResourceLeakDetectorFactory.java:202] - Loaded default ResourceLeakDetector: io.grpc.netty.shaded.io.netty.util.ResourceLeakDetector@170120f2
+DEBUG [InternalThreadLocalMap.java:54] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG [InternalThreadLocalMap.java:57] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG [DefaultChannelId.java:79] - -Dio.netty.processId: 36200 (auto-detected)
+DEBUG [NetUtil.java:139] - -Djava.net.preferIPv4Stack: false
+DEBUG [NetUtil.java:140] - -Djava.net.preferIPv6Addresses: false
+DEBUG [NetUtil.java:224] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [NetUtil.java:289] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG [DefaultChannelId.java:101] - -Dio.netty.machineId: b4:2e:99:ff:fe:f3:fe:9f (auto-detected)
+DEBUG [PooledByteBufAllocator.java:120] - -Dio.netty.allocator.numHeapArenas: 32
+DEBUG [PooledByteBufAllocator.java:121] - -Dio.netty.allocator.numDirectArenas: 32
+DEBUG [PooledByteBufAllocator.java:123] - -Dio.netty.allocator.pageSize: 8192
+DEBUG [PooledByteBufAllocator.java:128] - -Dio.netty.allocator.maxOrder: 11
+DEBUG [PooledByteBufAllocator.java:132] - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [PooledByteBufAllocator.java:133] - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG [PooledByteBufAllocator.java:134] - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [PooledByteBufAllocator.java:135] - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [PooledByteBufAllocator.java:136] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [PooledByteBufAllocator.java:137] - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [PooledByteBufAllocator.java:138] - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG [ByteBufUtil.java:83] - -Dio.netty.allocator.type: pooled
+DEBUG [ByteBufUtil.java:92] - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG [ByteBufUtil.java:95] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [Recycler.java:96] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG [Recycler.java:97] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG [Recycler.java:98] - -Dio.netty.recycler.linkCapacity: 16
+DEBUG [Recycler.java:99] - -Dio.netty.recycler.ratio: 8
+DEBUG [InternalLoggerFactory.java:47] - Using Log4J as the default logging framework
+DEBUG [MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 32
+DEBUG [NioEventLoop.java:111] - -Dio.netty.noKeySetOptimization: false
+DEBUG [NioEventLoop.java:112] - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [PlatformDependent.java:943] - Platform: Windows
+DEBUG [PlatformDependent0.java:376] - -Dio.netty.noUnsafe: false
+DEBUG [PlatformDependent0.java:829] - Java version: 17
+DEBUG [PlatformDependent0.java:120] - sun.misc.Unsafe.theUnsafe: available
+DEBUG [PlatformDependent0.java:144] - sun.misc.Unsafe.copyMemory: available
+DEBUG [PlatformDependent0.java:182] - java.nio.Buffer.address: available
+DEBUG [PlatformDependent0.java:252] - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:300] - java.nio.Bits.unaligned: unavailable true
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:273)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:266)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:353] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @1cbbffcd
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:315)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:306)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:366] - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG [PlatformDependent.java:980] - sun.misc.Unsafe: available
+DEBUG [PlatformDependent.java:1055] - maxDirectMemory: 4276092928 bytes (maybe)
+DEBUG [PlatformDependent.java:1074] - -Dio.netty.tmpdir: C:\Users\SAYAN\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [PlatformDependent.java:1153] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG [PlatformDependent.java:132] - -Dio.netty.noPreferDirect: false
+DEBUG [PlatformDependent.java:172] - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG [PlatformDependent.java:178] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG [CleanerJava9.java:63] - java.nio.ByteBuffer.cleaner(): available
+DEBUG [PlatformDependent.java:848] - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG [ResourceLeakDetector.java:121] - -Dio.grpc.netty.shaded.io.netty.leakDetection.level: simple
+DEBUG [ResourceLeakDetector.java:122] - -Dio.grpc.netty.shaded.io.netty.leakDetection.targetRecords: 4
+DEBUG [AbstractByteBuf.java:52] - -Dio.grpc.netty.shaded.io.netty.buffer.bytebuf.checkAccessible: true
+DEBUG [ResourceLeakDetectorFactory.java:202] - Loaded default ResourceLeakDetector: io.grpc.netty.shaded.io.netty.util.ResourceLeakDetector@64107b62
+DEBUG [InternalThreadLocalMap.java:54] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG [InternalThreadLocalMap.java:57] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG [DefaultChannelId.java:79] - -Dio.netty.processId: 33548 (auto-detected)
+DEBUG [NetUtil.java:139] - -Djava.net.preferIPv4Stack: false
+DEBUG [NetUtil.java:140] - -Djava.net.preferIPv6Addresses: false
+DEBUG [NetUtil.java:224] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [NetUtil.java:289] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG [DefaultChannelId.java:101] - -Dio.netty.machineId: b4:2e:99:ff:fe:f3:fe:9f (auto-detected)
+DEBUG [PooledByteBufAllocator.java:120] - -Dio.netty.allocator.numHeapArenas: 32
+DEBUG [PooledByteBufAllocator.java:121] - -Dio.netty.allocator.numDirectArenas: 32
+DEBUG [PooledByteBufAllocator.java:123] - -Dio.netty.allocator.pageSize: 8192
+DEBUG [PooledByteBufAllocator.java:128] - -Dio.netty.allocator.maxOrder: 11
+DEBUG [PooledByteBufAllocator.java:132] - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [PooledByteBufAllocator.java:133] - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG [PooledByteBufAllocator.java:134] - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [PooledByteBufAllocator.java:135] - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [PooledByteBufAllocator.java:136] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [PooledByteBufAllocator.java:137] - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [PooledByteBufAllocator.java:138] - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG [ByteBufUtil.java:83] - -Dio.netty.allocator.type: pooled
+DEBUG [ByteBufUtil.java:92] - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG [ByteBufUtil.java:95] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [Recycler.java:96] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG [Recycler.java:97] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG [Recycler.java:98] - -Dio.netty.recycler.linkCapacity: 16
+DEBUG [Recycler.java:99] - -Dio.netty.recycler.ratio: 8
+DEBUG [InternalLoggerFactory.java:47] - Using Log4J as the default logging framework
+DEBUG [MultithreadEventLoopGroup.java:44] - -Dio.netty.eventLoopThreads: 32
+DEBUG [NioEventLoop.java:111] - -Dio.netty.noKeySetOptimization: false
+DEBUG [NioEventLoop.java:112] - -Dio.netty.selectorAutoRebuildThreshold: 512
+DEBUG [PlatformDependent.java:943] - Platform: Windows
+DEBUG [PlatformDependent0.java:376] - -Dio.netty.noUnsafe: false
+DEBUG [PlatformDependent0.java:829] - Java version: 17
+DEBUG [PlatformDependent0.java:120] - sun.misc.Unsafe.theUnsafe: available
+DEBUG [PlatformDependent0.java:144] - sun.misc.Unsafe.copyMemory: available
+DEBUG [PlatformDependent0.java:182] - java.nio.Buffer.address: available
+DEBUG [PlatformDependent0.java:252] - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:224)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:218)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:300] - java.nio.Bits.unaligned: unavailable true
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.grpc.netty.shaded.io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:273)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:266)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:353] - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @1cbbffcd
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:560)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:315)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:306)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:208)
+	at io.grpc.netty.shaded.io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:79)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:258)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor.<init>(SingleThreadEventExecutor.java:165)
+	at io.grpc.netty.shaded.io.netty.channel.SingleThreadEventLoop.<init>(SingleThreadEventLoop.java:58)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:141)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:127)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:36)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:47)
+	at io.grpc.netty.shaded.io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:77)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:59)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:198)
+	at io.grpc.netty.shaded.io.grpc.netty.Utils$DefaultEventLoopGroupResource.create(Utils.java:182)
+	at io.grpc.internal.SharedResourceHolder.getInternal(SharedResourceHolder.java:104)
+	at io.grpc.internal.SharedResourceHolder.get(SharedResourceHolder.java:74)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder$NettyTransportFactory.<init>(NettyChannelBuilder.java:503)
+	at io.grpc.netty.shaded.io.grpc.netty.NettyChannelBuilder.buildTransportFactory(NettyChannelBuilder.java:337)
+	at io.grpc.internal.AbstractManagedChannelImplBuilder.build(AbstractManagedChannelImplBuilder.java:405)
+	at GRPCClient.main(GRPCClient.java:24)
+DEBUG [PlatformDependent0.java:366] - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+DEBUG [PlatformDependent.java:980] - sun.misc.Unsafe: available
+DEBUG [PlatformDependent.java:1055] - maxDirectMemory: 4276092928 bytes (maybe)
+DEBUG [PlatformDependent.java:1074] - -Dio.netty.tmpdir: C:\Users\SAYAN\AppData\Local\Temp (java.io.tmpdir)
+DEBUG [PlatformDependent.java:1153] - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+DEBUG [PlatformDependent.java:132] - -Dio.netty.noPreferDirect: false
+DEBUG [PlatformDependent.java:172] - -Dio.netty.maxDirectMemory: -1 bytes
+DEBUG [PlatformDependent.java:178] - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+DEBUG [CleanerJava9.java:63] - java.nio.ByteBuffer.cleaner(): available
+DEBUG [PlatformDependent.java:848] - org.jctools-core.MpscChunkedArrayQueue: available
+DEBUG [ResourceLeakDetector.java:121] - -Dio.grpc.netty.shaded.io.netty.leakDetection.level: simple
+DEBUG [ResourceLeakDetector.java:122] - -Dio.grpc.netty.shaded.io.netty.leakDetection.targetRecords: 4
+DEBUG [AbstractByteBuf.java:52] - -Dio.grpc.netty.shaded.io.netty.buffer.bytebuf.checkAccessible: true
+DEBUG [ResourceLeakDetectorFactory.java:202] - Loaded default ResourceLeakDetector: io.grpc.netty.shaded.io.netty.util.ResourceLeakDetector@57626f71
+DEBUG [InternalThreadLocalMap.java:54] - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+DEBUG [InternalThreadLocalMap.java:57] - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+DEBUG [DefaultChannelId.java:79] - -Dio.netty.processId: 30980 (auto-detected)
+DEBUG [NetUtil.java:139] - -Djava.net.preferIPv4Stack: false
+DEBUG [NetUtil.java:140] - -Djava.net.preferIPv6Addresses: false
+DEBUG [NetUtil.java:224] - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+DEBUG [NetUtil.java:289] - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+DEBUG [DefaultChannelId.java:101] - -Dio.netty.machineId: b4:2e:99:ff:fe:f3:fe:9f (auto-detected)
+DEBUG [PooledByteBufAllocator.java:120] - -Dio.netty.allocator.numHeapArenas: 32
+DEBUG [PooledByteBufAllocator.java:121] - -Dio.netty.allocator.numDirectArenas: 32
+DEBUG [PooledByteBufAllocator.java:123] - -Dio.netty.allocator.pageSize: 8192
+DEBUG [PooledByteBufAllocator.java:128] - -Dio.netty.allocator.maxOrder: 11
+DEBUG [PooledByteBufAllocator.java:132] - -Dio.netty.allocator.chunkSize: 16777216
+DEBUG [PooledByteBufAllocator.java:133] - -Dio.netty.allocator.tinyCacheSize: 512
+DEBUG [PooledByteBufAllocator.java:134] - -Dio.netty.allocator.smallCacheSize: 256
+DEBUG [PooledByteBufAllocator.java:135] - -Dio.netty.allocator.normalCacheSize: 64
+DEBUG [PooledByteBufAllocator.java:136] - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+DEBUG [PooledByteBufAllocator.java:137] - -Dio.netty.allocator.cacheTrimInterval: 8192
+DEBUG [PooledByteBufAllocator.java:138] - -Dio.netty.allocator.useCacheForAllThreads: true
+DEBUG [ByteBufUtil.java:83] - -Dio.netty.allocator.type: pooled
+DEBUG [ByteBufUtil.java:92] - -Dio.netty.threadLocalDirectBufferSize: 0
+DEBUG [ByteBufUtil.java:95] - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+DEBUG [Recycler.java:96] - -Dio.netty.recycler.maxCapacityPerThread: 4096
+DEBUG [Recycler.java:97] - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+DEBUG [Recycler.java:98] - -Dio.netty.recycler.linkCapacity: 16
+DEBUG [Recycler.java:99] - -Dio.netty.recycler.ratio: 8
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+DEBUG [AbstractInternalLogger.java:193] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] OUTBOUND SETTINGS: ack=true
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+DEBUG [AbstractInternalLogger.java:193] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] INBOUND SETTINGS: ack=true
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: localhost:8888, :path: /files/fetchcontents, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.15.1, grpc-accept-encoding: gzip, grpc-trace-bin: ] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=9 bytes=00000000040a022e2f
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] INBOUND DATA: streamId=3 padding=0 endStream=false length=9139 bytes=00000023ae0aab47417661696c61626c652046696c657320616e64204469726563746f726965733a205b2e636c617373706174685d205b2e67697469676e6f72...
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+ INFO [GRPCClient.java:29] - SERVER : 
+Available Files and Directories: [.classpath] [.gitignore] [.project] [.settings] [dependency-reduced-pom.xml] [Dockerfile] [files] [log] [pom.xml] [property] [src] [target] 
+--------------[ .classpath ]--------------
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
+<---------------[ END OF .classpath ]--------------->
+
+--------------[ .gitignore ]--------------
+/target/
+<---------------[ END OF .gitignore ]--------------->
+
+--------------[ .project ]--------------
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>grpcServer</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.xtext.ui.shared.xtextBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
+	</natures>
+</projectDescription>
+<---------------[ END OF .project ]--------------->
+
+--------------[ dependency-reduced-pom.xml ]--------------
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.server.grpc</groupId>
+  <artifactId>grpcServer</artifactId>
+  <name>GrpcServer</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <defaultGoal>clean generate-sources compile install</defaultGoal>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.4</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer>
+                  <mainClass>GRPCServer</mainClass>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.github.os72</groupId>
+        <artifactId>protoc-jar-maven-plugin</artifactId>
+        <version>3.6.0.1</version>
+        <executions>
+          <execution>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <configuration>
+              <includeMavenTypes>direct</includeMavenTypes>
+              <inputDirectories>
+                <include>src/main/resources</include>
+              </inputDirectories>
+              <outputTargets>
+                <outputTarget>
+                  <type>java</type>
+                  <outputDirectory>src/main/java</outputDirectory>
+                </outputTarget>
+                <outputTarget>
+                  <type>grpc-java</type>
+                  <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.15.0</pluginArtifact>
+                  <outputDirectory>src/main/java</outputDirectory>
+                </outputTarget>
+              </outputTargets>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+</project>
+<---------------[ END OF dependency-reduced-pom.xml ]--------------->
+
+--------------[ Dockerfile ]--------------
+FROM openjdk:17
+COPY files /src/java/grpcServer/
+COPY target/grpcServer-*.jar /src/java/grpcServer/grpcserver.jar
+WORKDIR /src/java/grpcServer
+EXPOSE 8888
+CMD ["java","-jar","/src/java/grpcServer/grpcserver.jar"]
+<---------------[ END OF Dockerfile ]--------------->
+
+--------------[ pom.xml ]--------------
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.server.grpc</groupId>
+	<artifactId>grpcServer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>GrpcServer</name>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api -->
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>3.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.grpc</groupId>
+			<artifactId>grpc-netty-shaded</artifactId>
+			<version>1.15.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.grpc</groupId>
+			<artifactId>grpc-protobuf</artifactId>
+			<version>1.15.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.grpc</groupId>
+			<artifactId>grpc-stub</artifactId>
+			<version>1.15.1</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<build>
+		<defaultGoal>clean generate-sources compile install</defaultGoal>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>3.2.4</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<transformers>
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<mainClass>GRPCServer</mainClass>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- compile proto file into java files. -->
+			<plugin>
+				<groupId>com.github.os72</groupId>
+				<artifactId>protoc-jar-maven-plugin</artifactId>
+				<version>3.6.0.1</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<includeMavenTypes>direct</includeMavenTypes>
+
+							<inputDirectories>
+								<include>src/main/resources</include>
+							</inputDirectories>
+
+							<outputTargets>
+								<outputTarget>
+									<type>java</type>
+									<outputDirectory>src/main/java</outputDirectory>
+								</outputTarget>
+								<outputTarget>
+									<type>grpc-java</type>
+									<pluginArtifact>io.grpc:protoc-gen-grpc-java:1.15.0</pluginArtifact>
+									<outputDirectory>src/main/java</outputDirectory>
+								</outputTarget>
+							</outputTargets>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+<---------------[ END OF pom.xml ]--------------->
+
+DEBUG [GRPCClient.java:30] - Fetch Other Files? ['yes'] OR ['no']: 
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] OUTBOUND HEADERS: streamId=5 headers=GrpcHttp2OutboundHeaders[:authority: localhost:8888, :path: /files/fetchcontents, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.15.1, grpc-accept-encoding: gzip, grpc-trace-bin: ] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] OUTBOUND DATA: streamId=5 padding=0 endStream=true length=17 bytes=000000000c0a0a2e2f70726f7065727479
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-encoding: identity, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] INBOUND DATA: streamId=5 padding=0 endStream=false length=941 bytes=00000003a80aa507417661696c61626c652046696c657320616e64204469726563746f726965733a205b6c6f67346a2e70726f706572746965735d200a2d2d2d...
+DEBUG [AbstractInternalLogger.java:216] - [id: 0xb497d719, L:/127.0.0.1:3586 - R:localhost/127.0.0.1:8888] INBOUND HEADERS: streamId=5 headers=GrpcHttp2ResponseHeaders[grpc-status: 0] streamDependency=0 weight=16 exclusive=false padding=0 endStream=true
+ INFO [GRPCClient.java:29] - SERVER : 
+Available Files and Directories: [log4j.properties] 
+--------------[ log4j.properties ]--------------
+# Define the root logger with appender file
+log4j.rootLogger = DEBUG, FILE, CONSOLE
+
+# Define the file appender
+log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
+log4j.appender.FILE=org.apache.log4j.FileAppender
+log4j.appender.FILE.File=./log/grpcServer.log
+
+# Define the layout for file appender
+# %5p - Priority of the logging event
+# %t - Name of the thread that initiated the logging event
+# %F- File name where the logging issue was requested
+# %L - line number that caused the logging message to be generated
+log4j.appender.CONSOLE.layout=org.apache.log4j.PatternLayout
+log4j.appender.CONSOLE.layout.conversionPattern=%5p [%F:%L] - %m%n
+log4j.appender.FILE.layout=org.apache.log4j.PatternLayout
+log4j.appender.FILE.layout.conversionPattern=%5p [%F:%L] - %m%n
+<---------------[ END OF log4j.properties ]--------------->
+
+DEBUG [GRPCClient.java:30] - Fetch Other Files? ['yes'] OR ['no']: 

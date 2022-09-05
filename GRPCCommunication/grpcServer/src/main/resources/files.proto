@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option java_package = "com.javastubs.grpc";
+option java_package = "com.telaverge.server";
 service files {
 	rpc fetchcontents (FetchRequest) returns (FetchResponse);
 }
